@@ -52,7 +52,7 @@ function LoadSlashCommand() {
         commands.push(slashcommand);
     })
 
-    const rest = new Discord.REST({version: "10"}).setToken(client.token)
+    const rest = new Discord.REST({version: "10"}).setToken(config.token) // config.token = client.token 
 
     rest.put(Routes.applicationCommands(client.user.id), {body: commands});
     console.log(`Commands slash loaded`)
