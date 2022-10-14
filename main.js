@@ -4,7 +4,7 @@ const { Routes } = require('discord.js')
 
 const Discord = require('discord.js');
 const intents = new Discord.IntentsBitField(3276799);
-const client = new Discord.Client({intents: 3276799});
+const client = new Discord.Client({intents});
 const config = require("./config.js");
 const console = require('console');
 
